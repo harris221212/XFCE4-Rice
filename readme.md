@@ -1,6 +1,6 @@
 # XFCE4 Rice for MacBook Pro 2012
 
-# Extra Recommended Configuration
+## Extra Recommended Configuration
 
 ### Removing Snaps (if using Xubuntu)
 
