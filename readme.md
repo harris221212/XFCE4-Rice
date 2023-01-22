@@ -28,7 +28,7 @@ This is necessary otherwise the next step to swap Esc and CapsLock will break th
 
 ### Change Eject Key to Delete
 
-`sudo cp 65-keyboard-custom.hwdb /lib/udev/hwdb.d/`
+`sudo cp 65-keyboard-custom.hwdb /lib/udev/hwdb.d/`  
 `sudo systemd-hwdm update`
 
 Credit to the guy here who made a really good post about this:  
