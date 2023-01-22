@@ -18,13 +18,19 @@ Inverts trackpad scroll, reduces sensitivity a little and turns on palm rejectio
 
 ### Change xcape bindings from Ctrl+Escape to Alt+F1
 
-`sudo cp xcape-super-bindings.desktop /etc/xdg/xdg-xubuntu/autostart/`
+`sudo cp xcape-super-bindings.desktop /etc/xdg/xdg-xubuntu/autostart/`  
+Changes this line:  
+`Exec=xcape -e 'Super_L=Control_L|Escape'`  
+to:  
+`Exec=xcape -e 'Super_L=Alt_L|F1'`
 
 This is necessary otherwise the next step to swap Esc and CapsLock will break the Super Key
 
 ### Swap Esc and CapsLock
 
-`setxkbmap -option caps:swapescape`
+`cp .profile ~/`  
+Runs this command at startup:  
+`setxcbmap -options caps:swapescape`
 
 ### Change Eject Key to Delete
 
